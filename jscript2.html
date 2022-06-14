@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="intro.html">HOME</a>
+    <a href="jscript.html">JavaScript 1</a>
+
+
+    <script>
+        document.write("<br>How to work on arrays.");
+        var hobbies =  new Array();
+
+        hobbies.push("money");
+        hobbies.push("cars");
+        hobbies.push("movies");
+        hobbies.push("games");
+
+        document.write("<br>"+hobbies.length);
+        for (let i = 0; i < hobbies.length; i++) {
+                document.write("<br>"+hobbies[i]);            
+        }
+        document.write("<br><br>");
+
+        hobbies.pop();
+        document.write("<br>"+hobbies.length);
+        for (let i = 0; i < hobbies.length; i++) {
+                document.write("<br>"+hobbies[i]);            
+        }
+        document.write("<br><br>");
+        hobbies.shift();
+        document.write("<br>"+hobbies.length);
+        for (let i = 0; i < hobbies.length; i++) {
+                document.write("<br>"+hobbies[i]);            
+        }
+        document.write("<br><br>");
+        hobbies.unshift("money","ice");
+        document.write("<br>"+hobbies.length);
+        for (let i = 0; i < hobbies.length; i++) {
+                document.write("<br>"+hobbies[i]);            
+        }
+        document.write("<br><br>");
+        var names=new Array("Bob","Walid", "Jane", "Doe");
+        document.write(names.toString());
+        document.write("<br>"+names.join("-"));
+
+
+    </script>
+</body>
+</html>

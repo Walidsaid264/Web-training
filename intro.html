@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="motion.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+    
+    <title>HOME</title>
+    
+</head>
+<body onload="slider()">
+    <div class="banner">
+        <div class="slider">
+            <img src="imgs/kungfupanda.jpg" id="slideimg">
+        </div>
+        <div class="overlay">
+            <div class="topnav" id="topnav">   
+                <div class="logo">
+                    <img class="logo" src="logo.png" alt="logo" width="150px" height="150px">
+                </div>
+        
+                <div class="navbar">
+                
+                     <a href="intro.html">HOME</a>
+                     <a href="projects.html">PROJECTS</a>
+                     <a href="team.html">TEAM</a>
+                     <a href="jscript.html">CONTACT US</a>
+                    
+            
+                </div>
+            </div>
+            <div class="content">
+                <h1>LORDSHIP AFRICA</h1>
+                <h3> PREMIUM REAL ESTATE</h3>
+                <div>
+                    
+                    <a href="projects.html" class="button">AFRICA PROJECTS</a>
+                    <a href="http://www.lordship.eu/" class="button">EUROPE PROJECTS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+     
+
+
+    <script>
+        var slideimg = document.getElementById("slideimg");
+        var images = new Array (
+        "imgs/Flame.jpg",
+        "imgs/pic1.jpg",
+        "imgs/pic7.jpg",
+        "imgs/pic3.jpg",
+        "imgs/pic4.jpg",
+        "imgs/pic6.jpg",
+        "imgs/pic2.jpg"
+
+        );
+        var len = images.length;
+        var i = 0;
+        function slider(){
+            if(i>len-1){
+                i=0;
+            }
+            slideimg.src=images[i];
+            i++;
+            setTimeout('slider()',3000);
+        }
+    </script>
+            <div class="done">
+                PROJECTS
+            </div>
+        <div class="cont">
+            <div class="house" id="house1">
+                <br><br><br><br><br><br><br><br>
+                <h1 class="cotext">eighty eight</h1> 
+                <h3 class="cotext">Nairobi Condeminium</h3>
+                <h3 class="cotext">UPPER HILL</h3>
+                <h4 class="cotext">239 Rooms 300 Spaces</h4>
+            </div>
+            <div class="house" id="house2">
+                <br><br><br><br><br><br><br><br>
+                <h1 class="cotext">eighty eight</h1> 
+                <h3 class="cotext">Nairobi Condeminium</h3>
+                <h3 class="cotext">UPPER HILL</h3>
+                <h4 class="cotext">239 Rooms 300 Spaces</h4>
+            </div>
+            <div class="house" id="house3">
+                <br><br><br><br><br><br><br><br>
+                <h1 class="cotext">eighty eight</h1> 
+                <h3 class="cotext">Nairobi Condeminium</h3>
+                <h3 class="cotext">UPPER HILL</h3>
+                <h4 class="cotext">239 Rooms 300 Spaces</h4>
+            </div>
+
+        </div>
+    <div class="last">
+            
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+</body>
+</html>
